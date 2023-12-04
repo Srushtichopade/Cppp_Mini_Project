@@ -1,0 +1,284 @@
+
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<conio.h>
+using namespace std;
+
+int b_available=100;
+class Book
+{
+public:
+void Second()
+{
+ cout<<"\n\n#####BOOK LIST FOR 2st YEAR#####\n";
+ cout<<"\nBOOK NAME\t\t\tNO OF BOOKS AVAILABLE\n";
+ 
+ cout<<"\n1] OOP \t\t=\t100";
+ cout<<"\n2] CS \t\t\t=\t100";
+ cout<<"\n3] COA \t\t\t=\t100";
+ cout<<"\n4] FLAT \t\t\t\t=\t100";
+ cout<<"\n5] ADS \t\t\t=\t100";
+ cout<<"\n6] PYTHON \t\t\t=\t100";
+ cout<<"\n7] LANGUAGE LIKE ENGLISH,JAPNESE,ETC \t\t=\t100";//sem3
+ 
+ cout<<"\n8] OPERATING SYSTEM \t\t=\t100";
+ cout<<"\n9] DBMS \t\t=\t100";
+ cout<<"\n10] SOFTWARE ENGINEERING \t\t=\t100";
+ cout<<"\n11] DESIGN AND ANALYSIS \t=\t100"; 
+ cout<<"\n12]DESIGN THINKING \t=\t100";//SEM4
+ 
+
+}
+void Third()
+{
+ cout<<"#####BOOK LIST FOR 3nd YEAR#####\n";
+ cout<<"\nBOOK NAME\t\t\tNO OF BOOKS AVAILABLE\n";
+ 
+ cout<<"\n13] MACHINE LEARNING \t=\t100";
+ cout<<"\n14] COMPUTER NETWORK AND SECURITY \t=\t100";
+ cout<<"\n15. BUSINESS COMMUNICATION =\t100";
+ cout<<"\n16. FUNDAMENTAL OF  MANAGMENT  \t=\t100";
+ cout<<"\n17. SDL ||\t\t=\t100";//SEM5
+
+ cout<<"\n18. DATA MINING AND ANALYSIS =100";
+ cout<<"\n19.COMPILER DESIGN \t=\t100";
+ cout<<"\n20. MARKETING RESEARCH AND MANAGMENT \t=\t100";
+ cout<<"\n21. INTERNET OF THINGS \t\t=\t100";
+ cout<<"\n22. MODERN WEB APLLICATION \t=\t100";
+ cout<<"\n23. CLOUD ,MICRO SERVICES AND APPLICATION \t\t=\t100";// SEM 6
+ 
+
+
+
+}
+void Four()
+{
+ cout<<"#####BOOK LIST FOR 4nd YEAR#####\n";
+ cout<<"\nBOOK NAME\t\t\tNO OF BOOKS AVAILABLE\n";
+ 
+ cout<<"\n24.PROBABILITY STATISTIC \t=\t100";
+ cout<<"\n25.FUNDAMENTAL OF PHYSICS =\t100";
+ cout<<"\n26. DISCREATE MATHEMATICS =100";
+ cout<<"\n27.PRINCIPLES OF ELECTICAL ENGG =100";
+ cout<<"\n29. FUNDAMENTAL OF COMPUTER PROGRAMING \t=\t100";//SEM 7
+ 
+ cout<<"\n30. LINEAR ALGEBRA C\t\t=\t100";
+ cout<<"\n31. STATISTICAL METHOD =\t100";
+ cout<<"\n32.  DATA STRUCTURE AND ALGORITHMS \t=\t100";
+ cout<<"\n33. PRINCIPLES OF ELECTRONICES ENGG =\t100";
+  cout<<"\n26. PRINCIPLES OF ECONOMICS =100";//SEM 8
+ 
+}
+};
+
+class Book_info
+{
+public:
+int b_available=100;
+int n;
+int id;
+int date,month,year;
+int quantity;
+
+void Data(void)
+{
+cout<<"\n\nEnter the number of books you want to return:";
+cin>>n;
+for(int num=1;num<=n;num++)
+{
+cout<<"\n\nBook ID from the above list:";
+cin>>id;
+cout<<"\nQuantity of books:";
+cin>>quantity;
+cout<<"\n\nBook Name\t\t\tNo.of Books Available\n";
+b_available = ::b_available+quantity;
+switch(id)
+{
+case 1:
+cout<<"\n1] OOP \t\t="<<b_available;
+break;
+case 2:
+cout<<"\n2] CS \t\t\t="<<b_available;
+break;
+case 3:
+cout<<"\n3] COA \t\t\t="<<b_available;
+break;
+case 4:
+cout<<"\n4] FLAT \t\t\t\t="<<b_available;
+break;
+case 5:
+cout<<"\n5] ADS \t\t\t="<<b_available;
+break;
+case 6:
+cout<<"\n6] PYTHON \t\t\t="<<b_available;
+break;
+case 7:
+cout<<"\n7]LANGUAGE LIKE ENGLISH,JAPNESE,ETC\t\t="<<b_available;
+break;
+case 8:
+cout<<"\n8] OPERATING SYSTEM C\t\t="<<b_available;
+break;
+case 9:
+cout<<"\n9] DBMS \t\t="<<b_available;
+break;
+case 10:
+cout<<"\n10] SOFTWARE ENGINNERING \t\t="<<b_available;
+break;
+case 11:
+cout<<"\n11]DESIGN AND ANALYSIS\t="<<b_available;
+break;
+case 12:
+cout<<"\n12]DESIGN THINKING \t="<<b_available;
+break;
+case 13:
+cout<<"\n13] PROBABILITY STATISTIC\t="<<b_available;
+break;
+case 14:
+cout<<"\n14] MACHINE LEARNING  \t\t="<<b_available;
+break;
+case 15:
+cout<<"\n15. COMPUTER NETWORK AND SECURITY ="<<b_available;
+break;
+case 16:
+cout<<"\n16.BUSINESS COMMUNICATION \t="<<b_available;
+break;
+case 17:
+cout<<"\n17. FUNDAMENTAL OF MANAGMENT \t\t="<<b_available;
+break;
+case 18:
+cout<<"\n18.SDL ||="<<b_available;
+break;
+case 19:
+cout<<"\n19. DATA MINING AND ANALYSIS \t="<<b_available;
+break;
+case 20:
+cout<<"\n20.COMPILER DESIGN \t="<<b_available;
+break;
+case 21:
+cout<<"\n21. MARKETING RESERCH AND MANAGMENT \t\t="<<b_available;
+break;
+case 22:
+cout<<"\n22.INTERNET OF THINGS \t="<<b_available;
+break;
+case 23:
+cout<<"\n23. MODERN WEB APPLICATION \t\t="<<b_available;
+break;
+case 24:
+cout<<"\n24. CLOUD ,MICRO SERVICES AND APPLICATION \t\t\t\t="<<b_available;
+break;
+case 25:
+cout<<"\n25. PROBABILITY STATISTIC ="<<b_available;
+break;
+case 26:
+cout<<"\n26. FUNDAMENTAL OF PHYSICS \t\t\t="<<b_available;
+break;
+case 27:
+cout<<"\n27.DISCREATE MATHEMATICS \t\t="<<
+b_available;
+break;
+case 28:
+cout<<"\n28.PRINCIPLES OF ELECTICAL ENGG \t\t="<<b_available;
+break;
+case 29:
+cout<<"\n29.LINEAR ALGEBRA \t\t="<<b_available;
+break;
+case 30:
+cout<<"\n30.STATISTICAL METHOD \t\t="<<
+b_available;
+break;
+case 31:
+cout<<"\n31. DATA STRUCATURE AND ALGORITHMS \t\t="<<b_available;
+break;
+case 32:
+cout<<"\n32.PRINCIPLES OF ELECTRONICES ENGG \t\t="<<b_available;
+break;
+case 33:
+cout<<"\n33.PRINCIPLES OF ECONOMICS\t\t="<<b_available;
+break;
+default:
+cout<<"Invalid ID............";
+}
+}
+}
+};
+
+int main()
+{
+char name[30];
+char branch[30];
+int password;
+int year;
+int days;
+float fine;
+int issue_date;
+int To_date;
+int issue_month;
+int To_month;
+int issue_year;
+int To_year;
+Book info;
+Book_info Detail;
+cout<<"\n**********RETURN LIBRARY MANAGEMENT SYSTEM **********\n\n";
+cout<<"•••••**STUDENT LOGIN**•••••";
+cout<<"\n\nPlease enter your name:";
+cin>>name;
+cout<<"\nPlease enter your password(3 digit password):";
+cin>>password;
+cout<<"\nEnter your Branch:";
+cin>>branch;
+cout<<"\nEnter Year:";
+cin>>year;
+cout<<"\nLOGIN SUCCESSFULLY…....\n";
+if(year==2)
+{
+info.Second();
+}
+else if(year==3)
+{
+info.Third();
+}
+else if(year==4)
+{
+info.Four();
+}
+else
+{
+cout<<"Sorry Books are not available for"<<year<<"year";
+}
+if(year==2||year==3||year==4)
+{
+Detail.Data();
+cout<<"\n\nEnter issue date-month-year:";
+cin>>issue_date>>issue_month>>issue_year;
+cout<<"Book issued date:"<<issue_date<<"/"<<issue_month<<"/"<<issue_year;
+
+cout<<"\n\nEnter Today's date-month-year:";
+cin>>To_date>>To_month>>To_year;
+cout<<"Check Today's date:"<<To_date<<"/"<<To_month<<"/"<<To_year;
+
+cout<<"\nEnter the number of days to belate to return books:";
+cin>>days;
+
+if(days>=0&&days<=5)
+{
+cout<<"\nNo fine";
+}
+else if(days>=6&&days<=10)
+{
+fine=2*days;
+cout<<"\nYou have to pay "<<fine;
+}
+else if(days>20)
+{
+fine =5*days;
+cout<<"\nYou have to pay "<<fine;
+}
+cout<<"\n\nTHE BOOKS ARE RETURNED";
+cout<<"\n\nTHANKYOU!!!!!!!!!";
+
+}
+return 0;
+}
+
